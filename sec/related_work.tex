@@ -1,0 +1,13 @@
+\section{Related Work}
+
+\noindent \textbf{Defenses against the low-rate TCP attack.} Several methods have been proposed to detect and mitigate the low-rate TCP attack in traditional IP networks. In the study\cite{b4}, the authors proposed a mechanism to dynamically detect and defend against the low-rate TCP attack. However, the mechanism fails to consider mitigating the malicious flows. In addition, it sets a fixed sampling period, which means the attack flows whose periods are smaller than the sampling periods cannot be identified. 
+%In the study\cite{b5}, the author proposed four alternatives to defend the low-rate DoS attack against application servers. The  approaches randomize the server operation to rearrange the positions in the incoming queues of applications for eliminating possible vulnerabilities due to predictable behaviors. 
+Other methods adopts frequency based methods, including the sum of Low-Frequency Power spectrum (SLFP) \cite{b6} and cumulative amplitude spectrum (CAS) \cite{b7}. Shrew Attack Protection (SAP) \cite{b8} is a port-based approach by changing the fairness mechanism of dropping packets. \cite{b17} introduces randomization on TCP RTO to defense the low-rate TCP attack. 
+
+
+\noindent \textbf{Defenses against DoS attacks in SDN.} Bohatei~\cite{b9} is a flexible defense to defend many types of known DDoS, e.g., SYN flood, DNS amplification, UDP flood. %In [14], with the entropy-based method, SVM classifier, and mitigation agent in SDN, the network is protected from DDoS attacks. 
+SPIFFY \cite{b16} introduces SDN-based defense to defend link-flooding attacks. 
+%ProDefense \cite{b11} solves the problem that traffic threshold for DDoS detection vary for existing SDN-based solutions and utilizes a distributed controller platform for load balancing and failure tolerance improvement. 
+Other defenses \cite{b10, b12, b13, b15, b18} are proposed to defend SDN DoS attacks that exhaust control-data plane bandwidth, computational resources, and flow table. However, above existing defenses fail to consider on defending the low-rate TCP attack. 
+
+

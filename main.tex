@@ -1,5 +1,93 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+ \documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{subfig}
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}} % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm
+
+\newcommand{\TheName}{SoftGuard}
+\newcommand{\TheAttack}{low-rate TCP attack}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
-(Type your content here.)
+
+\title{\TheName{}: Defend against the Low-Rate TCP Attack in SDN
+}
+
+\author{
+\IEEEauthorblockN{Renjie Xie\IEEEauthorrefmark{1}\IEEEauthorrefmark{2}\IEEEauthorrefmark{3}, 
+Mingwei Xu\IEEEauthorrefmark{1}\IEEEauthorrefmark{2}, 
+Jiahao Cao\IEEEauthorrefmark{1}\IEEEauthorrefmark{2},
+Qi Li\IEEEauthorrefmark{1}\IEEEauthorrefmark{2},\IEEEauthorrefmark{3} 
+} 
+
+\IEEEauthorblockA{\IEEEauthorrefmark{1}
+Department of Computer Science and Technology, Tsinghua University, Beijing, China} 
+\IEEEauthorblockA{\IEEEauthorrefmark{2}
+Beijing National Research Center for Information Science and Technology(BNRist), Beijing, China} 
+\IEEEauthorblockA{\IEEEauthorrefmark{3}
+Graduate School at Shenzhen, Tsinghua Univesity, Guangzhou, China}
+\IEEEauthorblockA{
+\{xrj16, caojh15\}@mails.tsinghua.edu.cn, xumw@tsinghua.edu.cn, 
+qi.li@sz.tsinghua.edu.cn}
+}
+
+\maketitle
+
+\input{sec/abstract.tex}
+\input{sec/introduction.tex}
+\input{sec/background.tex}
+\input{sec/design.tex}
+\input{sec/evaluation.tex}
+\input{sec/related_work.tex}
+\input{sec/conclusion.tex}
+
+
+% \begin{IEEEkeywords}
+% component, formatting, style, styling, insert
+% \end{IEEEkeywords}
+
+
+
+
+
+\begin{thebibliography}{00}
+\bibitem{b1} Zhang C, Cai Z, Chen W, et al. Flow level detection and filtering of low-rate DDoS[J]. Computer Networks, 2012, 56(15): 3417-3431.
+\bibitem{b2} Zhang Y, Mao Z M, Wang J. Low-Rate TCP-Targeted DoS Attack Disrupts Internet Routing[C]//NDSS. 2007.
+\bibitem{b3} Chen Y, Hwang K, Kwok Y K. Filtering of shrew DDoS attacks in frequency domain[C]//Local Computer Networks, 2005. 30th Anniversary. The IEEE Conference on. IEEE, 2005: 8 pp.-793.
+\bibitem{b4} Sun H, Lui J C S, Yau D K Y. Defending against low-rate TCP attacks: Dynamic detection and protection[M]. IEEE, 2004.
+\bibitem{b5} Maciá-Fernández G, Rodríguez-Gómez R A, Díaz-Verdejo J E. Defense techniques for low-rate DoS attacks against application servers[J]. Computer Networks, 2010, 54(15): 2711-2727.
+\bibitem{b6} Wei W, Dong Y, Lu D, et al. A novel mechanism to defend against low-rate denial-of-service attacks[C]//International Conference on Intelligence and Security Informatics. Springer, Berlin, Heidelberg, 2006: 261-271.
+\bibitem{b7} Chen Y, Hwang K. Collaborative detection and filtering of shrew DDoS attacks using spectral analysis[J]. Journal of Parallel and Distributed Computing, 2006, 66(9): 1137-1151.
+\bibitem{b8} Chang C W, Lee S, Lin B, et al. The taming of the shrew: mitigating low-rate TCP-targeted attack[J]. IEEE Transactions on Network and Service Management, 2010, 7(1): 1-13.
+\bibitem{b9} Fayaz S K, Tobioka Y, Sekar V, et al. Bohatei: flexible and elastic DDoS defense[C]// Usenix Conference on Security Symposium. USENIX Association, 2015:817-832.
+\bibitem{b10} Xu Y, Liu Y. DDoS attack detection under SDN context[C]//INFOCOM 2016-The 35th Annual IEEE International Conference on Computer Communications, IEEE. IEEE, 2016: 1-9.
+\bibitem{b11} Bawany N Z, Shamsi J A, Salah K. DDoS attack detection and mitigation using SDN: methods, practices, and solutions[J]. Arabian Journal for Science and Engineering, 2017, 42(2): 425-441.
+\bibitem{b12} Shang G, Zhe P, Bin X, et al. FloodDefender: Protecting data and control plane resources under SDN-aimed DoS attacks[C]//INFOCOM 2017-IEEE Conference on Computer Communications, IEEE. IEEE, 2017: 1-9.
+\bibitem{b13} Xu T, Gao D, Dong P, et al. Defending against new-flow attack in sdn-based internet of things[J]. IEEE Access, 2017, 5: 3431-3443.
+\bibitem{b14} Hu D, Hong P, Chen Y. FADM: DDoS Flooding Attack Detection and Mitigation System in Software-Defined Networking[C]//GLOBECOM 2017-2017 IEEE Global Communications Conference. IEEE, 2017: 1-7.
+\bibitem{b15} Yang X, Han B, Sun Z, et al. Sdn-based ddos attack detection with cross-plane collaboration and lightweight flow monitoring[C]//GLOBECOM 2017-2017 IEEE Global Communications Conference. IEEE, 2017: 1-6.
+\bibitem{b16} Kang M S, Gligor V D, Sekar V. SPIFFY: Inducing Cost-Detectability Tradeoffs for Persistent Link-Flooding Attacks[C]//NDSS. 2016.
+\bibitem{b17} Yang G, Gerla M, Sanadidi M Y. Defense against low-rate TCP-targeted denial-of-service attacks[C]//Computers and Communications, 2004. Proceedings. ISCC 2004. Ninth International Symposium on. IEEE, 2004, 1: 345-350.
+\bibitem{b18} Zhang M, Bi J, Bai J, et al. FloodShield: Securing the SDN Infrastructure Against Denial-of-Service Attacks[C]//2018 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications/12th IEEE International Conference On Big Data Science And Engineering (TrustCom/BigDataSE). IEEE, 2018: 687-698.
+\bibitem{b19} https://www.wired.com/story/github-ddos-memcached/
+\bibitem{b20} Kuzmanovic A, Knightly E W. Low-rate TCP-targeted denial of service attacks: the shrew vs. the mice and elephants[C]//Proceedings of the 2003 conference on Applications, technologies, architectures, and protocols for computer communications. ACM, 2003: 75-86.
+\bibitem{b21} Zhang Y, Mao Z M, Wang J. Low-Rate TCP-Targeted DoS Attack Disrupts Internet Routing[C]//NDSS. 2007.
+\bibitem{b22} Kwok Y K, Tripathi R, Chen Y, et al. HAWK: Halting anomalies with weighted choking to rescue well-behaved TCP sessions from shrew DDoS attacks[M]//Networking and mobile computing. Springer, Berlin, Heidelberg, 2005: 423-432.
+\bibitem{b23} Shin S W, Porras P, Yegneswara V, et al. Fresco: Modular composable security services for software-defined networks[C]//20th Annual Network \& Distributed System Security Symposium. NDSS, 2013.
+\bibitem{b24} Zheng J, Li Q, Gu G, et al. Realtime DDoS Defense Using COTS SDN Switches via Adaptive Correlation Analysis[J]. IEEE Transactions on Information Forensics and Security, 2018, 13(7): 1838-1853.
+
+
+\end{thebibliography}
+
 \end{document}
